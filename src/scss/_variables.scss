@@ -1,0 +1,57 @@
+$screen-full-desktop: 1280px;
+$screen-desktop: 980px;
+$screen-tablet: 750px;
+$screen-large-mobile: 480px; //used for sidebar
+
+
+$marginLeft: 10rem;
+
+
+$padding-sides-mobile: 1.5rem;
+$padding-sides-tablet: 4rem;
+$padding-sides-desktop: 7rem;
+$padding-sides-full-desktop: 10rem;
+
+@mixin darkBg {
+  background: #000 url(../images/riddick-text-bg.gif) center no-repeat;
+  color: #fff;
+}
+
+@mixin baseFontStyles {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+@mixin baseTitleStyles {
+  font-family: 'Traveling_TypewriterRegular', "Courier New", Courier, sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+}
+
+@mixin baseSidePadding {
+  padding: 0 $padding-sides-mobile;
+  @media (min-width: $screen-tablet) {
+    padding: 0 $padding-sides-tablet;
+  }
+  @media (min-width: $screen-desktop) {
+    padding: 0 $padding-sides-desktop;
+  }
+  @media (min-width: $screen-full-desktop) {
+    padding: 0 $padding-sides-full-desktop;
+  }
+}
+
+@mixin link-hover {
+  padding: 0 5px;
+  margin: 0 -5px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+@mixin block-hover {
+  filter: alpha(opacity=50);
+  opacity: .50;
+  -moz-opacity: 0.5;
+}

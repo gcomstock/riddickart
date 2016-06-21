@@ -1,0 +1,162 @@
+.R__main__sidebar {
+  vertical-align: top;
+  text-align: right;
+
+
+  @media (min-width: $screen-tablet) {
+    width: 30%;
+    margin-left: 4%;
+    display: inline-block;
+  }
+}
+
+
+.R__main__sidebar__section {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+
+  @media (min-width: $screen-large-mobile) {
+    width: 49%;
+    vertical-align: top;
+  }
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.R__main__sidebar__section--logos {
+  @media (min-width: $screen-large-mobile) {
+    width: 100%;
+  }
+
+  img {
+    max-width: 180px;
+    width: 48%;
+    margin: 0 1%;
+
+    @media (min-width: $screen-large-mobile) {
+      width: 23%;
+    }
+    @media (min-width: $screen-tablet) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+
+.R__main__sidebar__section--search {
+  @media (min-width: $screen-large-mobile) {
+    margin-right: 2%;
+  }
+  @media (min-width: $screen-tablet) {
+    margin-right: 0;
+  }
+}
+
+
+.R__main__sidebar__section--archives {
+  width: 100%;
+
+  ul {
+    @include baseFontStyles;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1rem;
+
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    @media (min-width: $screen-large-mobile) {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+    }
+    @media (min-width: $screen-tablet) {
+      width: 100%;
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
+
+  li {
+    padding: 0.5rem 0;
+  }
+}
+
+
+#wp-calendar {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+
+  caption {
+    @include baseTitleStyles;
+    margin-bottom: 2rem;
+  }
+
+  th {
+    color: #666;
+    text-align: center;
+
+    a {
+      background: url(../images/sidebar/calendar_day.png);
+      color: #fff;
+    }
+    a:hover {
+      filter: alpha(opacity=50);
+      opacity: .50;
+      -moz-opacity: 0.5;
+    }
+  }
+
+  tbody td {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    position: relative;
+
+    a {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.5rem;
+      position: absolute;
+      @include darkBg;
+    }
+  }
+
+  tfoot {
+    #prev {
+      padding-top: 2rem;
+      text-align: left;
+    }
+    #next {
+      padding-top: 2rem;
+      text-align: right;
+    }
+  }
+}
+
+
+//search field and submit btn
+#s {
+  width: 78%;
+  margin-right: 2%;
+}
+
+#s-btn {
+  @include darkBg;
+  font-family: 'Traveling_TypewriterRegular', "Courier New", Courier, sans-serif;
+  width: 20%;
+}

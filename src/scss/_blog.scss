@@ -1,0 +1,78 @@
+.R__main__blog {
+  @include baseFontStyles;
+  overflow: hidden;
+
+  @media (min-width: $screen-tablet) {
+    width: 66%;
+    display: inline-block;
+  }
+}
+
+
+
+
+.R__main__blog__post__title {
+  margin-bottom: 1.5rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+.R__main__blog__post__date {
+  font-size: 1.6rem;
+}
+.R__main__blog__post__entry {
+  padding: 0 0 3rem 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+.R__main__blog__navigation {
+  overflow: hidden;
+  background: url(../images/riddick-horizontal-rule.gif) bottom repeat-x;
+  padding-bottom: 6rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: $screen-tablet) {
+    background: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding-top: 90px;
+    min-width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 48%;
+
+    &:first-child {
+      float: right;
+      background: url(../images/riddick-hand-next.png) top center no-repeat;
+    }
+    &:last-child {
+      float: left;
+      background: url(../images/riddick-hand-back.png) top center no-repeat;
+    }
+  }
+}
+
+
+
+
+.R__main__blog__noresults {
+  margin-bottom: 9rem;
+  text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    text-align: left;
+  }
+}

@@ -1,0 +1,139 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 126rem;
+
+  @media (min-width: $screen-full-desktop) {
+    background: transparent url(../images/riddick-bg-wrapper.gif) center 110px repeat-y;
+  }
+}
+.wrapper--frontPage {
+  margin-top: 48%;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 40rem; //fiddle with this value to look good with :before image
+  }
+
+  &:before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+
+    background: url(../images/riddick-header-home-mobile.gif) top center no-repeat;
+    background-size: 100%; //no visual overflow on mobile
+
+    @media (min-width: $screen-tablet) {
+      background: url(../images/riddick-header-home.gif) top center no-repeat;
+      background-size: auto;
+    }
+  }
+
+  .R__header {
+    position: relative;
+    padding-top: 0;
+
+    @media (min-width: $screen-tablet) {
+      padding-top: 5rem; //fiddle with this value to look good with :before image
+    }
+
+    @media (min-width: $screen-full-desktop) {
+      background: none; //no header bg on front page
+
+      &:before {
+        content: '';
+        position: absolute;
+        background: url(../images/riddick-bg-header-home.gif) top center no-repeat;
+        top: -200px;
+        left: 0;
+        width: 100%;
+        height: 240px;
+      }
+    }
+  }
+}
+
+
+
+
+.R__header {
+  padding-top: 4rem;
+  text-align: center;
+
+  @media (min-width: $screen-full-desktop) {
+    padding-top: 8rem;
+    background: url(../images/riddick-bg-header.gif) top center no-repeat;
+  }
+}
+.R__header__title {
+  display: inline-block;
+
+  margin: 0 1.5rem;
+  @media (min-width: $screen-large-mobile) {
+    margin: 0 3rem;
+  }
+
+  img {
+    width: 100%;
+    max-width: 530px;
+  }
+}
+.R__header__menu {
+  margin: 0 2rem;
+
+  padding: 2rem 0;
+  @media (min-width: $screen-tablet) {
+    padding: 2rem 0 6rem;
+  }
+
+  a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    margin: 0 -0.35rem 1rem -0.35rem;
+    text-decoration: none;
+    color: #555;
+  }
+
+  a:hover {
+    @include darkBg;
+  }
+}
+
+
+
+
+.R__main {
+  @include baseSidePadding;
+  font-size: 0;
+
+  @media (min-width: $screen-full-desktop) {
+    margin: 0 4rem; //for static edge background image
+  }
+}
+
+.R__main--about {
+  padding: 0; //padding applied to child elements on about page for background imagery and dropcap
+}
+
+
+
+
+.R__footer {
+  height: 4rem;
+
+  @media (min-width: $screen-full-desktop) {
+    height: 250px;
+    background: url(../images/riddick-bg-footer.gif) top center no-repeat;
+  }
+}
+
+
+
+
+.row {
+  margin-bottom: 6rem;
+}

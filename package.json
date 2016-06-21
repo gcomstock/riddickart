@@ -1,0 +1,15 @@
+{
+  "name": "riddickart-wordpress-theme",
+  "version": "3.0.0",
+  "author": "greg comstock",
+  "scripts": {
+    "clean": "rm -r dist/* && rm -r /Applications/MAMP/htdocs/wordpress/wp-content/themes/riddickart",
+    "build": "npm run build:sass -s && npm run build:copy -s && npm run build:mampsync -s",
+    "build:sass": "node-sass --output-style compressed -o dist/css src/scss",
+    "build:copy": "rsync --exclude='scss' -r src/* dist",
+    "build:mampsync": "rsync -r dist/* /Applications/MAMP/htdocs/wordpress/wp-content/themes/riddickart"
+  },
+  "devDependencies": {
+    "node-sass": "^3.7.0"
+  }
+}

@@ -1,0 +1,53 @@
+#R__main__gallery {
+  text-align: center;
+}
+
+.R__main__gallery__img {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  width: 46%;
+  padding-bottom: 46%;
+  margin: 2%;
+  position: relative;
+
+  @media (min-width: $screen-tablet) {
+    width: 29%;
+    padding-bottom: 29%;
+  }
+}
+
+
+.R__main__gallery__img__caption {
+  @include baseFontStyles;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88%;
+  height: 88%;
+  padding: 6%;
+  color: #fff;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  text-align: center;
+  transition: opacity 150ms ease-in-out;
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 68px;
+    width: 100%;
+    background: url(../images/riddick-bg-gallery-img.png) center bottom repeat-x;
+  }
+}
+
+
+.R__main__gallery__img:hover {
+  .R__main__gallery__img__caption {
+    opacity: 1;
+  }
+}

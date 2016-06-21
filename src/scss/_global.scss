@@ -1,0 +1,126 @@
+//when user highlights text
+::selection {
+  background-color: #6e0000;
+  color: #fff;
+}
+::-moz-selection {
+  background-color: #6e0000;
+  color: #fff;
+}
+
+
+html {
+  font-size: 10px;
+  font-family: Courier New, Courier;
+}
+
+body, h1, h2, h3, h4, h5, h6, blockquote, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/riddick-bg-mobile.gif);
+  background-position: top center;
+  background-color: #fff;
+  background-size: 300px;
+
+  @media (min-width: $screen-tablet) {
+    background-size: auto;
+  }
+  @media (min-width: $screen-full-desktop) {
+    background-image: url(../images/riddick-bg-top.gif), url(../images/riddick-bg.gif);
+    background-repeat: repeat-x, repeat;
+    background-position: top center, top center;
+    background-color: #000;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  @include baseTitleStyles;
+}
+
+a {
+  color: #000;
+  outline: none;
+}
+
+p {
+  @include baseFontStyles;
+}
+
+hr {
+  background-image: url('../images/riddick-horizontal-rule.gif');
+  background-repeat: repeat-x;
+  height: 3rem;
+  margin: 6rem 0 0 0;
+  border: none;
+}
+
+@font-face {
+  font-family: 'Traveling_TypewriterRegular';
+  src: url('../fonts/travelingtypewriter-webfont.eot');
+  src: url('../fonts/travelingtypewriter-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/travelingtypewriter-webfont.woff') format('woff'),
+       url('../fonts/travelingtypewriter-webfont.ttf') format('truetype'),
+       url('../fonts/travelingtypewriter-webfont.svg#Traveling_TypewriterRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+//section titles, blog titles
+h3 {
+  font-size: 2.6rem;
+  margin: 3rem 0;
+}
+
+//sidebar title, has cool black background!
+h4 {
+  background: #000 url(../images/riddick-text-bg.gif) right center no-repeat;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin-top: 2rem;
+}
+
+//section subtitle
+h5 {
+  font-size: 2rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+//entry date
+h6 {
+  font-size: 1.6rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+input {
+  box-sizing: border-box;
+  @include baseFontStyles;
+  background: transparent;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.R__hand {
+  @include baseTitleStyles;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding-top: 90px;
+  min-width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.R__hand--next {
+  background: url(../images/riddick-hand-next.png) top center no-repeat;
+}
+.R__hand--back {
+  background: url(../images/riddick-hand-back.png) top center no-repeat;
+}

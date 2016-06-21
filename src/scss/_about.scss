@@ -1,0 +1,169 @@
+.R__about {
+  background-image: url(../images/about/mark_riddick.gif);
+  background-size: 110%;
+  background-position: 210% 0;
+  background-repeat: no-repeat;
+  font-size: 0;
+
+  @include baseSidePadding;
+
+  @media (min-width: $screen-tablet) {
+    background-position: right top;
+    background-size: 70%;
+  }
+  @media (min-width: $screen-desktop) {
+    background-size: 670px;
+  }
+  @media (min-width: $screen-full-desktop) {
+    padding: 0;
+    margin-right: 3rem; // + crumpled paper = margin on left side
+  }
+
+}
+.R__about__bio {
+  display: inline-block;
+  margin-top: 100%; //leave space for crumpled paper bio img
+  margin-bottom: 6rem;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 1.5rem;
+    width: 50%;
+  }
+  @media (min-width: $screen-full-desktop) {
+    margin-left: $marginLeft;
+    width: 53rem;
+  }
+}
+.R__about__bio__cap {
+  background-image: url(../images/about/a.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+
+  margin: -16px 4px -15px -28px;
+  width: 100px;
+  height: 100px;
+
+  @media (min-width: $screen-tablet) {
+    margin: -28px 4px -8px -60px;
+    width: 160px;
+    height: 160px;
+  }
+}
+.R__about__contact {
+  margin-bottom: 6rem;
+
+  @media (min-width: $screen-tablet) {
+    text-align: right;
+    margin-top: 570px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  @media (min-width: $screen-full-desktop) {
+    width: 44rem;
+  }
+}
+.R__about__contact__icons a {
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+
+
+
+.R__exhibits {
+  font-size: 0;
+
+  @include baseSidePadding;
+}
+.R__exhibits__year {
+  font-family: 'Traveling_TypewriterRegular';
+  margin-top: 2.5rem;
+  font-weight: bold;
+  font-size: 4rem;
+  vertical-align: top;
+
+  padding-left: 1.5%;
+  border-left: 1px dotted #000;
+
+  @media (min-width: $screen-tablet) {
+    display: inline-block;
+    padding-left: 0;
+    width: 15%;
+    border-left: none;
+  }
+  @media (min-width: $screen-desktop) {
+    width: 12%;
+  }
+}
+.R__exhibits__entries {
+  @include baseFontStyles;
+
+  display: inline-block;
+  padding: 1rem 0 1rem 1.5%;
+  border-left: 1px dotted #000;
+  line-height: 2.8rem;
+
+  @media (min-width: $screen-tablet) {
+    margin-top: 2rem;
+    padding-left: 2.5%;
+    width: 82%;
+  }
+  @media (min-width: $screen-desktop) {
+    padding-left: 1.5%;
+    width: 86%;
+  }
+}
+
+
+
+
+.R__books {
+  font-size: 0;
+
+  @include baseSidePadding;
+}
+.R__books__book {
+  text-align: center;
+  vertical-align: top;
+  display: block;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    display: inline-block;
+    width: 46%;
+    margin-right: 4%;
+  }
+  @media (min-width: $screen-desktop) {
+    width: 36%;
+  }
+}
+.R__books__description {
+  h5 {
+    text-align: center;
+  }
+
+  @media (min-width: $screen-tablet) {
+    display: inline-block;
+    width: 50%;
+
+    h5 {
+      text-align: left;
+    }
+  }
+  @media (min-width: $screen-desktop) {
+    width: 60%;
+  }
+}
