@@ -1,5 +1,6 @@
 #R__main__gallery {
   text-align: center;
+  padding-bottom: 6rem;
 }
 
 .R__main__gallery__img {
@@ -10,6 +11,10 @@
   padding-bottom: 46%;
   margin: 2%;
   position: relative;
+  opacity: 0;
+  backface-visibility: hidden;
+  transform: scale3d(0.8,0.8,1);
+  transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 
   @media (min-width: $screen-tablet) {
     width: 29%;
@@ -45,9 +50,11 @@
   }
 }
 
-
-.R__main__gallery__img:hover {
-  .R__main__gallery__img__caption {
-    opacity: 1;
+//no hover for mobile
+@media (min-width: $screen-tablet) {
+  .R__main__gallery__img:hover {
+    .R__main__gallery__img__caption {
+      opacity: 1;
+    }
   }
 }
