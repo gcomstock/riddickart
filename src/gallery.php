@@ -53,7 +53,7 @@ Template Name: Instagram Gallery
           for (var i = 0; i < tns.length; i++) {
             tns[i].offsetHeight; //force reflow
             tns[i].style.opacity = 1;
-            tns[i].style.transform = 'scale3d(1,1,1)';
+            tns[i].style.transform = 'translate3d(0,0,0)';
           };
 
           if (this.hasNext()) {
