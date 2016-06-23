@@ -14,15 +14,6 @@ Template Name: Instagram Gallery
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/instafeed.min.js"></script>
 
   <script type="text/javascript">
-    /*
-      CLIENT INFO
-      CLIENT ID	8d5a6df20c714cbaa7a027fafbade629
-      WEBSITE URL	riddickart.com
-      REDIRECT URI	http://www.riddickart.com
-      SUPPORT EMAIL	gcomstock@gmail.com
-      userID: 2344925701
-    */
-
     window.onload = function(){
 
       var shouldFetch = true;
@@ -32,7 +23,7 @@ Template Name: Instagram Gallery
                      '</a>';
 
       function fetchMoreImages(){
-        if (shouldFetch && window.scrollY > (gallery.offsetHeight - window.outerHeight) ) {
+        if (shouldFetch && window.scrollY > (gallery.offsetHeight - window.outerHeight/2) ) {
           shouldFetch = false;
           feed.next();
         }
@@ -42,9 +33,9 @@ Template Name: Instagram Gallery
         get: 'user',
         limit: 6,
         target: 'R__main__gallery',
-        userId: 178110804,
-        clientId: '54db78126f764a879ba681b4a9db8140',
-        accessToken: '178110804.54db781.e9695f2f1ddf4ce6b68cf91798e131e9',
+        userId: 2344925701,
+        clientId: 'ff640d6c765c443780b0b1a1fd90de43',
+        accessToken: '2344925701.ff640d6.71b231fc2bc2444eb964f387e5f26a7b',
         template: template,
         resolution: 'low_resolution',
         after: function() {
