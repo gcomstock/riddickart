@@ -29,7 +29,7 @@
 	<!--/WORDPRESS HEADER-->
 
   <!--SEO-->
-    <meta name="description" content="Mark Riddick saw his first illustrations published in a small underground fanzine from Washington called, Scavenger Magazine. His first T-Shirt design, out of hundreds to come, was for Kentucky-based grindcore crust band, Son of Dog. After a few years publishing his work with bands and fanzines, Mark�s name soon became synonymous with underground death and black metal music." />
+    <!--<meta name="description" content="Mark Riddick saw his first illustrations published in a small underground fanzine from Washington called, Scavenger Magazine. His first T-Shirt design, out of hundreds to come, was for Kentucky-based grindcore crust band, Son of Dog. After a few years publishing his work with bands and fanzines, Mark's name soon became synonymous with underground death and black metal music." />-->
 	  <meta name="keywords" content="riddickart, the art of mark riddick, mark riddick, fossil dungeon, illustrator, grotesque, filler art, underground, death/black metal, artwork, artist, fanzines, publications, musiq, design, logo, graphics, brutal, gore, hell, satan, athiest, heavy, morbid, profane, maggot, logos from hell" />
   <!--SEO-->
 

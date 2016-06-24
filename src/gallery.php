@@ -22,8 +22,9 @@ Template Name: Instagram Gallery
                      '  <div class="R__main__gallery__img__caption">{{caption}}</div>'+
                      '</a>';
 
+      //not working on mobile, but instagram limit is 20, so dont both using it
       function fetchMoreImages(){
-        if (shouldFetch && window.scrollY > (gallery.offsetHeight - window.outerHeight/2) ) {
+        if (shouldFetch && window.scrollY > (gallery.offsetHeight - window.outerHeight) ) {
           shouldFetch = false;
           feed.next();
         }
@@ -31,7 +32,7 @@ Template Name: Instagram Gallery
 
       var feed = new Instafeed({
         get: 'user',
-        limit: 6,
+        limit: 20,
         target: 'R__main__gallery',
         userId: 2344925701,
         clientId: 'ff640d6c765c443780b0b1a1fd90de43',
