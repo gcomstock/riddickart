@@ -6,6 +6,7 @@
 
 <div class="R__main R__main--about">
 
+
   <div class="R__about">
     <div class="R__about__bio">
       <div class="R__about__bio__cap"></div>
@@ -34,6 +35,42 @@
   </div>
 
 
+  <div class="R__books">
+    <h3>Books</h3>
+
+    <div class="row">
+      <a class="R__books__book" target="_blank" />
+        <img src="<?php bloginfo('template_directory'); ?>/images/about/book_riddick_morbid_visions.jpg" />
+      </a>
+      <div class="R__books__description">
+        <h5>Morbid Visions</h5>
+        <p>2016 / Hard cover / 376 pages</p>
+        <p>Published by Doomentia Records and Press, Morbid Visions compiles underground death metal illustrator Mark Riddick's work from the past few years into one hard cover tome. Almost 400 pages boasting Riddick's best work to date including unpublished illustrations, sketches, and logos for some of the most extreme bands in the heavy metal scene. Includes an extensive and in-depth introduction by Riddick's twin brother.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <a class="R__books__book" target="_blank" />
+        <img src="<?php bloginfo('template_directory'); ?>/images/about/book_riddick_logos_from_hell.jpg" />
+      </a>
+      <div class="R__books__description">
+        <h5>Logos from Hell</h5>
+        <p>2015 / Hard cover / 600 pages</p>
+        <p>Logos from Hell offers a glimpse into the most extreme and underground movement of logo identity branding in the history of graphic design. This 600-page tome is a visual onslaught of logo illustrations—for the heaviest metal bands on the planet—conjured by over thirty of the most talented and sought-after artists in the industry, including Christophe Szpajdel, Chris Moyen, Daniel Corcuera, Putrid, Kam Lee, Steve Crow, Kris Verwimp, Alan Corpse, Christopher Horst, Alemsahim, Diego Hellbastard, Antichrist Kramer, Toshihiro Egawa, Thomas Westphal, Raoul Mazzero, and many more! Compiled by underground death metal illustrator—Mark Riddick, with foreward by Michel “Away” Langevin—of Voivod fame—Logos from Hell seeks to inspire, bewilder, and challenge the reader to embrace sound design principles guised by the monstrous. Unleashed by one of the rising leaders in extreme metal music audio/visual publishing, Doomentia Records and Press, Logos from Hell is the perfect addition to your library whether you’re a metal music fan or a visual expert.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <a class="R__books__book" target="_blank" />
+        <img src="<?php bloginfo('template_directory'); ?>/images/about/book_riddick_compendium_of_death.jpg" />
+      </a>
+      <div class="R__books__description">
+        <h5>Compendium of Death</h5>
+        <p>2012 / Hard cover / 600 pages / Out of print</p>
+        <p>A 20-year retrospective book featuring illustrations by notorious underground death metal artist, Mark Riddick. Published by Doomentia Press (www.doomentia.com), “Compendium of Death” boasts almost 600 pages, bound in hard cover format with introduction by Mike Abominator, an in-depth interview from 2011, and packed with over 700 images of unearthed corpses, mounds of entrails, and unholy rituals drawn for some of death metal’s most iconic and underground bands. First 100 copies accompanied by a signed and numbered 5-print set, first 25 copies with an original piece of art by Mark Riddick.</p>
+      </div>
+    </div>
+  </div>
 
 
   <div class="R__exhibits">
@@ -107,44 +144,6 @@
       <b>July</b> &ldquo;Riddickart Exhibit&rdquo; &ndash; Strangeland Records, Annandale, VA<br>
       <b>September</b> &ldquo;California Death Metal Festival&rdquo; &ndash; Fresno, CA<br>
       <b>September</b> &ldquo;5th Annual Halloween Art Show&rdquo; &ndash; MF Gallery, New York City, NY
-    </div>
-  </div>
-
-
-  <div class="R__books">
-    <h3>Books</h3>
-
-    <div class="row">
-      <a class="R__books__book" target="_blank" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/about/book_riddick_morbid_visions.jpg" />
-      </a>
-      <div class="R__books__description">
-        <h5>Morbid Visions</h5>
-        <p>2016 / Hard cover / 376 pages</p>
-        <p>Published by Doomentia Records and Press, Morbid Visions compiles underground death metal illustrator Mark Riddick's work from the past few years into one hard cover tome. Almost 400 pages boasting Riddick's best work to date including unpublished illustrations, sketches, and logos for some of the most extreme bands in the heavy metal scene. Includes an extensive and in-depth introduction by Riddick's twin brother.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <a class="R__books__book" target="_blank" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/about/book_riddick_logos_from_hell.jpg" />
-      </a>
-      <div class="R__books__description">
-        <h5>Logos from Hell</h5>
-        <p>2015 / Hard cover / 600 pages</p>
-        <p>Logos from Hell offers a glimpse into the most extreme and underground movement of logo identity branding in the history of graphic design. This 600-page tome is a visual onslaught of logo illustrations—for the heaviest metal bands on the planet—conjured by over thirty of the most talented and sought-after artists in the industry, including Christophe Szpajdel, Chris Moyen, Daniel Corcuera, Putrid, Kam Lee, Steve Crow, Kris Verwimp, Alan Corpse, Christopher Horst, Alemsahim, Diego Hellbastard, Antichrist Kramer, Toshihiro Egawa, Thomas Westphal, Raoul Mazzero, and many more! Compiled by underground death metal illustrator—Mark Riddick, with foreward by Michel “Away” Langevin—of Voivod fame—Logos from Hell seeks to inspire, bewilder, and challenge the reader to embrace sound design principles guised by the monstrous. Unleashed by one of the rising leaders in extreme metal music audio/visual publishing, Doomentia Records and Press, Logos from Hell is the perfect addition to your library whether you’re a metal music fan or a visual expert.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <a class="R__books__book" target="_blank" />
-        <img src="<?php bloginfo('template_directory'); ?>/images/about/book_riddick_compendium_of_death.jpg" />
-      </a>
-      <div class="R__books__description">
-        <h5>Compendium of Death</h5>
-        <p>2012 / Hard cover / 600 pages / Out of print</p>
-        <p>A 20-year retrospective book featuring illustrations by notorious underground death metal artist, Mark Riddick. Published by Doomentia Press (www.doomentia.com), “Compendium of Death” boasts almost 600 pages, bound in hard cover format with introduction by Mike Abominator, an in-depth interview from 2011, and packed with over 700 images of unearthed corpses, mounds of entrails, and unholy rituals drawn for some of death metal’s most iconic and underground bands. First 100 copies accompanied by a signed and numbered 5-print set, first 25 copies with an original piece of art by Mark Riddick.</p>
-      </div>
     </div>
   </div>
 

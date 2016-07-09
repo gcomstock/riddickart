@@ -56,14 +56,22 @@
   <!--/FAVICONS-->
 </head>
 <body>
-  <?php include(TEMPLATEPATH.'/warning.php'); ?>
+  <?php
+    include(TEMPLATEPATH.'/warning.php');
+
+    global $post;
+    $activePage=$post->post_name;
+
+    if ($activePage !== 'about' && $activePage !== 'gallery') {
+      $activePage = 'news';
+    }
+  ?>
 
 	<div class="wrapper <?php if (is_front_page()) { echo 'wrapper--frontPage'; }?>">
 
     <div class="R__header">
       <a class="R__header__title" href="<?php echo site_url();?>"><img src="<?php bloginfo('template_directory'); ?>/images/riddick-logo.png"></a>
-
-      <div class="R__header__menu">
+      <div class="R__header__menu R__header__menu--<?php echo $activePage ?>">
         <h5>
           <a href="<?php echo site_url();?>">news</a>
           &#47;
