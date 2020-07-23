@@ -4,25 +4,55 @@ Template Name: Instagram Gallery
 */
 ?>
 
-<?php get_header(); ?>
+<?php
+  get_header();
+
+  // This snippet fetches and stores an instagram auth token in cache that lasts a week.
+  // A fresh token is fetched every 15 mins.
+  // If the cache is lost, a starter token can be generated here:
+  // https://developers.facebook.com/apps/2710745775691528/instagram-basic-display/basic-display/
+  // If this process is too brittle, try this instead:
+  // https://www.instant-tokens.com/home
+
+  $refreshTimer = get_transient( 'refreshTimer' );
+  $weeklyToken = get_transient( 'weeklyToken' );
+
+  if ( empty( $weeklyToken ) ) {
+    // seed starter token from FB developer flow
+    $weeklyToken = 'IGQVJVLUJ2M0dnN1hnQmJ...';
+  }
+
+  if ( empty( $refreshTimer ) ) {
+    $response = wp_safe_remote_get( 'https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' . $weeklyToken );
+    $response_body = json_decode( $response['body'] );
+
+    set_transient( 'weeklyToken', $response_body->access_token, WEEK_IN_SECONDS );
+    set_transient( 'refreshTimer', True, HOUR_IN_SECONDS / 4 );
+  }
+?>
+
+
 
 
 <div class="R__main">
 
   <div id="R__main__gallery"></div>
 
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/instafeed.min.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/instafeed.min.js?cache=jul2020"></script>
 
   <script type="text/javascript">
     window.onload = function(){
 
+      var token = <?php echo json_encode($weeklyToken); ?>;
       var shouldFetch = true;
       var gallery = document.getElementById('R__main__gallery');
       var template = '<a href="{{link}}" class="R__main__gallery__img" style="background-image:url({{image}})" target="_blank">'+
                      '  <div class="R__main__gallery__img__caption">{{caption}}</div>'+
                      '</a>';
 
-      //not working on mobile, but instagram limit is 20, so dont both using it
+      console.log(token);
+
+      // not working on mobile?
       function fetchMoreImages(){
         if (shouldFetch && window.scrollY > (gallery.offsetHeight - window.outerHeight) ) {
           shouldFetch = false;
@@ -31,14 +61,10 @@ Template Name: Instagram Gallery
       }
 
       var feed = new Instafeed({
-        get: 'user',
-        limit: 20,
+        limit: 24,
         target: 'R__main__gallery',
-        userId: 2344925701,
-        clientId: 'ff640d6c765c443780b0b1a1fd90de43',
-        accessToken: '2344925701.ff640d6.71b231fc2bc2444eb964f387e5f26a7b',
+        accessToken: token,
         template: template,
-        resolution: 'low_resolution',
         after: function() {
           var tns = document.querySelectorAll('.R__main__gallery__img');
 
@@ -55,7 +81,9 @@ Template Name: Instagram Gallery
       });
 
       feed.run();
-      window.addEventListener('scroll', fetchMoreImages);
+
+      // re-enable when this is resolved: https://github.com/stevenschobert/instafeed.js/issues/649
+      // window.addEventListener('scroll', fetchMoreImages);
     };
   </script>
 

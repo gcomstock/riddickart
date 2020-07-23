@@ -18,9 +18,11 @@
         <a href="//www.facebook.com/riddickartillustration" target="_blank">
           <img src="<?php bloginfo('template_directory'); ?>/images/about/icon_facebook.gif" />
         </a>
+        <!--
         <a href="//www.twitter.com/riddickart" target="_blank">
           <img src="<?php bloginfo('template_directory'); ?>/images/about/icon_twitter.gif" />
         </a>
+        -->
         <a href="//www.instagram.com/riddickart" target="_blank">
           <img src="<?php bloginfo('template_directory'); ?>/images/about/icon_instagram.gif" />
         </a>

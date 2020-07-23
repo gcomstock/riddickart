@@ -17,3 +17,6 @@ Thumbs.db
 # Project files #
 ######################
 /dist/
+
+
+.idea/
