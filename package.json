@@ -10,6 +10,6 @@
     "build:mampsync": "rsync -r dist/* /Applications/MAMP/htdocs/wordpress/wp-content/themes/riddickart"
   },
   "devDependencies": {
-    "node-sass": "^3.7.0"
+    "node-sass": "^4.14.1"
   }
 }
