@@ -32,7 +32,7 @@
       </div>
 
       <br />
-      <h5><a href="mailto:mark@fossildungeon.com">mark@fossildungeon.com</a></h5>
+      <h5><a href="mailto:riddickart@gmail.com">riddickart@gmail.com</a></h5>
     </div>
   </div>
 
