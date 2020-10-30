@@ -79,7 +79,7 @@
           &#47;
           <a href="<?php echo site_url();?>/about">about</a>
           &#47;
-          <a href="http://riddickart.bigcartel.com" target="_blank">store</a>
+          <a href="https://www.pyrepressmerch.com/store/riddickart" target="_blank">store</a>
           &#47;
           <a href="http://www.boardpusher.com/riddickart" target="_blank">skateboards</a>
         </h5>
