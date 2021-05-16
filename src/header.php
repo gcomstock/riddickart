@@ -62,7 +62,7 @@
     global $post;
     $activePage=$post->post_name;
 
-    if ($activePage !== 'about' && $activePage !== 'gallery') {
+    if ($activePage !== 'about' && $activePage !== 'contact') {
       $activePage = 'news';
     }
   ?>
@@ -75,7 +75,7 @@
         <h5>
           <a href="<?php echo site_url();?>">news</a>
           &#47;
-          <a href="<?php echo site_url();?>/gallery">gallery</a>
+          <a href="<?php echo site_url();?>/contact">contact</a>
           &#47;
           <a href="<?php echo site_url();?>/about">about</a>
           &#47;

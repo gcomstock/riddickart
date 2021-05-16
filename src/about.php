@@ -30,9 +30,10 @@
           <img src="<?php bloginfo('template_directory'); ?>/images/about/icon_youtube.gif" />
         </a>
       </div>
-
+      <!--
       <br />
       <h5><a href="mailto:riddickart@gmail.com">riddickart@gmail.com</a></h5>
+      -->
     </div>
   </div>
 

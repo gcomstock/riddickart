@@ -1,0 +1,46 @@
+.R__main--contact {
+  text-align: center;
+}
+
+.R__main__contact {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+
+  @media (min-width: $screen-full-desktop) {
+    padding: 0 200px;
+  }
+}
+
+.R__main__contact__fakefield {
+  display: none;
+}
+
+.R__main__contact__inputheader {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.R__main__contact__input {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.R__main__contact__textarea {
+  width: 100%;
+  min-height: 240px;
+  border: 1px solid black;
+}
+
+.R__main__contact__submit {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.R__main__contact__submitheader {
+  margin: 1.5rem 0 6rem 0;
+}
